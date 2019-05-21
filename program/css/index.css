@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 1000px;
+    background: url("../img/bg_signin.jpg");
+    width: 100%;
+    height: 100%;
+    background-size:100% 100%; 
+}
+
+.head_bg {
+    width: 100%;
+    background: rgba(127, 74, 136, 0.3);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+    height: 60px;
+    padding-left: 39px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.head_bg .head_logo img {
+    height: 26px;
+    width: 78px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-right: 2px solid #ffffff;
+    padding-right: 18px;
+}
+
+.head_bg .head_logo span {
+    margin-left: 111px;
+    bottom: 0;
+    line-height: 60px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.bottom {
+    border-top: 1px solid #ffffff;
+    background: transparent;
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.lab0 {
+    width: 109px;
+    height: 33px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 13px;
+
+}
+
+.frame {
+    width: 570px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 165px;
+    padding: 50px 80px;
+    box-sizing: border-box;
+}
+
+.regist {
+    display: block;
+}
+
+.login {
+    display: none;
+}
+
+.content_one {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.lab1 {
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    /*苹方-简常规体*/
+    color: #ffffff;
+    letter-spacing: 0;
+    font-size: 22px;
+    width: 90px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 14px;
+
+}
+
+.lab2 {
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    /*苹方-简常规体*/
+    color: #ffffff;
+    letter-spacing: 0;
+    font-size: 22px;
+    width: 90px;
+    height: 30px;
+    display: inline-block;
+
+}
+
+.phoneNum {
+    margin-top: 32px;
+}
+
+.phoneNum>input {
+    width: 410px;
+    height: 42px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    opacity: 0.7;
+}
+
+span {
+    color: red;
+    margin: 0px 10px;
+    font-size: 12px;
+
+
+}
+
+.content_two {
+    width: 410px;
+    height: 42px;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 0px 10px;
+}
+
+
+.prove {
+    width: 289px;
+    height: 42px;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+    opacity: 0.7;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.btn {
+    color: #ffffff;
+    border-radius: 3px;
+    margin-left: 13px;
+    width: 103px;
+    height: 42px;
+    background: #7f4a88;
+    border: 0 solid;
+    font-size: 13px;
+    cursor: pointer;
+    /*鼠标悬停时出现手势*/
+}
+
+/*鼠标悬停时出现改变颜色*/
+.btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+}
+
+input:focus {
+    border: 1px solid #7f4a88;
+    outline: none;
+}
+
+.btn_register {
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 410px;
+    height: 42px;
+    background: #7f4a88;
+    font-size: 18px;
+    border: 0 solid;
+}
+
+.btn_register:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+}
+
+.lab3 {
+    margin-top: 32px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    /*苹方-简常规体*/
+    color: #ffffff;
+    letter-spacing: 0;
+    font: 13px;
+    text-align: center;
+
+}
+
+.lab3>label {
+    cursor: pointer;
+}
+
+.lab3>label:hover {
+    text-decoration: underline;
+}
+
+#go_pwd {
+    font-size: 13px;
+    display: block;
+    margin-top: 8px;
+    color: #ffff;
+    opacity: 0.5
+}

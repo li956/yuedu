@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head_bg {
+    width: 100%;
+    height: 60px;
+    background: #7F4A88;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+    padding-left: 39px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.head_bg .head_logo img {
+    height: 26px;
+    width: 78px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-right: 2px solid #ffffff;
+    padding-right: 18px;
+}
+
+.head_bg .head_logo span {
+    margin-left: 111px;
+    bottom: 0;
+    line-height: 60px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.head_bg #write_article img {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 96px;
+    margin: auto;
+}
+
+.head_bg #write_article span {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    right: 39px;
+
+    line-height: 60px;
+}
+
+.head_bg #to_index {
+    position: absolute;
+    right: 151px;
+    height: 60px;
+    top: 0;
+}
+
+.head_bg #to_index a {
+
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 60px;
+    margin-left: 25px;
+}
+
+.head_bg #user_info {
+    position: absolute;
+    right: 151px;
+    display: none;
+    height: 60px;
+    top: 0;
+    text-align: right;
+
+}
+
+.head_bg #user_info #header {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.head_bg #user_info #user_name {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 8px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.head_bg #user_info #arrow {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-left: 10.5px;
+    transition: 300ms;
+}
+
+.head_bg #user_info:hover #arrow {
+    transform: rotate(180deg);
+
+}
+
+#list {
+    position: absolute;
+    right: -7px;
+    width: 109px;
+    height: 124.7px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+    z-index: -1;
+    opacity: 0;
+    top: 25px;
+    text-align: center;
+    text-align: center;
+    transition: 1s;
+
+
+}
+
+.head_bg #user_info:hover #list {
+    top: 50px;
+    opacity: 1;
+    z-index: 999;
+
+
+}
+
+#list :hover+#arrow {
+    transform: rotate(180deg);
+}
+
+
+#list>ul {
+    list-style: none;
+}
+
+#list>ul>li {
+    width: 100%;
+    height: 41.5px;
+    line-height: 41.5px;
+    vertical-align: middle;
+    padding: 0 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+#list>ul>li:hover {
+    color: #FFFFFF;
+    background: #7F4A88;
+}
+
+#list>ul>li>img {
+    vertical-align: middle;
+}
+
+#list>ul>li>span {
+
+    vertical-align: middle;
+
+}
+
+.triangle {
+    border: 12px solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: -20px;
+    left: 85px;
+    z-index: -1;
+}
+
+.con_bg .title {
+    width: 671px;
+    height: 52px;
+    box-sizing: border-box;
+    padding: 15px 0;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+    border-bottom: 1px solid #7F4A88;
+    margin: 0 auto;
+    margin-top: 109px;
+}
+
+.con_bg .form_bg {
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    width: 671px;
+    height: 389px;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 377px;
+    padding: 39px 67px 10px 63px;
+    box-sizing: border-box;
+}
+
+.afterline {
+    height: 50px;
+}
+
+.sexline {
+    height: 50px;
+}
+
+.afterline input {
+    height: 36px;
+    width: 220px;
+    box-sizing: border-box;
+}
+
+.form_bg label {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    width: 45px;
+    display: inline-block;
+}
+
+.form_bg select {
+    width: 143px;
+    height: 36px;
+    margin-right: 20px;
+    opacity: 0.2;
+    background: #FFFFFF;
+    border: 1px solid #222629;
+    border-radius: 4px;
+}
+
+/* 文件上传 */
+.con_bg .form_bg .upload_files {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.con_bg .form_bg .upload_files input {
+    position: absolute;
+    left: -999px;
+}
+
+.con_bg .form_bg .upload_files #file_lab {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(34, 38, 41, 0.35);
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#file_lab img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.con_bg .form_bg .upload_files #lab_img {
+    background: url('../img/ico_header.jpg');
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.file_bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(34, 38, 41, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.con_bg .form_bg .upload_files span {
+    position: absolute;
+    width: 49px;
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 10px;
+    z-index: 999;
+}
+
+.afterline a {
+    font-size: 14px;
+}
+
+#btn_sub {
+    height: 30px;
+    width: 75px;
+    font-size: 14px;
+    margin-left: 48px;
+    background: #7f4a88;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+#btn_sub:hover {
+    background: rgba(34, 38, 41, 0.5);
+    cursor: pointer;
+}
+
+.footer {
+    border-top: 1px solid #7F4A88;
+    text-align: center;
+    font-size: 13px;
+    color: #222629;
+    height: 60px;
+    width: 100%;
+}
+
+.footer span {
+    line-height: 60px;
+}
+#list>ul>li:hover img{
+    
+    filter:invert(100%)
+
+}
+#black_screen{
+    display: none;
+}
+#file_lab:hover #black_screen{
+   display: block;
+}

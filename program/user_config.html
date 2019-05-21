@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/user_config.css">
+    <script src="./js/common.js"></script>
+    <script src="./js/get_info.js"></script>
+    <title>账户设置</title>
+</head>
+
+<body>
+    <div class="head_bg">
+        <a href="#" class="head_logo" onclick="goback()">
+            <img src="data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDc3Ljg4IDI1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxvZ29fd2hpdGU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEuNjksMjUuNzYsMTcuMjUsMUgyNi41VjI1Ljc2SDIwLjU5bC0uMDctOC41NEgxMy45TDguNzYsMjUuNzZaTTIwLjUxLDUuODNsLTQuNDQsNi45MWg0LjQ0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEuNjkgLTEpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzQuNDQsMTcuMTF2OC42NUgyOS4xN1YxSDQxLjUzYTE3LDE3LDAsMCwxLDQuODMuNDgsNi44Myw2LjgzLDAsMCwxLDMuODYsMy4zOCw4LjcxLDguNzEsMCwwLDEsMSw0LjE5LDkuNDIsOS40MiwwLDAsMS0uNjksMy41OCw3LjI0LDcuMjQsMCwwLDEtMS45MSwyLjc3LDYuMzgsNi4zOCwwLDAsMS0yLjM2LDEuMzQsMTIuMzMsMTIuMzMsMCwwLDEtMy40LjM3Wm0wLTQuNDJoNy4xNmE0LjYxLDQuNjEsMCwwLDAsMi43MS0uNTksMy45NCwzLjk0LDAsMCwwLDEuMTUtMy4yM3EwLTIuNDktMS43NC0zLjE5YTUuNjcsNS42NywwLDAsMC0yLS4yNkgzNC40NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjY5IC0xKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjg5LDI1Ljc2VjFoNS4yN1YyNS43NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjY5IC0xKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYyLjA2LDI2VjIxLjU4aDlhNS4yOSw1LjI5LDAsMCwwLDIuODYtLjUyLDIuNzUsMi43NSwwLDAsMCwxLTIuMzQsMywzLDAsMCwwLTEuMjEtMi42NCwzLjgyLDMuODIsMCwwLDAtMi4xOC0uNDhINjcuODlxLTMuMzMsMC00LjgtMS41MmE2Ljc1LDYuNzUsMCwwLDEtMS40My0yLjQyLDkuMjYsOS4yNiwwLDAsMS0uNTItMy4xMiw5LjU3LDkuNTcsMCwwLDEsMS4yMS00Ljc2LDQuODYsNC44NiwwLDAsMSwzLjc3LTIuNDUsMjIuNjgsMjIuNjgsMCwwLDEsMi42Mi0uMTFoOS43NVY1LjYzaC04LjhhMTIuNTIsMTIuNTIsMCwwLDAtMi42Mi4yMnEtMS4zMi40MS0xLjMyLDIuNTNhMi40NCwyLjQ0LDAsMCwwLDEuMTIsMi4zOCw1LDUsMCwwLDAsMi40Ny40NWgzLjE1YTkuMzcsOS4zNywwLDAsMSwzLjU5LjUyQTUuMDksNS4wOSwwLDAsMSw3OSwxNC44NWExMS42MiwxMS42MiwwLDAsMSwuNjIsMy44Myw5LjU2LDkuNTYsMCwwLDEtLjgyLDQuMDUsNC45NCw0Ljk0LDAsMCwxLTMuNDQsMywxOC44MiwxOC44MiwwLDAsMS0zLjM5LjIyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEuNjkgLTEpIi8+PC9zdmc+
+                                    " alt="">
+            <span>悦读项目</span>
+        </a>
+        <a href="http://localhost:8080/project/program/write_article.html" id="write_article">
+            <img src="./img/icon_write.png" alt="">
+            <span>写文章</span>
+        </a>
+        <div id="to_index">
+            <a href="http://localhost:8080/project/program/index.html?">登录</a>
+            <a href="http://localhost:8080/project/program/index.html">注册</a>
+        </div>
+        <div id="user_info">
+            <img src="./img/ico_header.jpg" id="header" alt="">
+            <span id="user_name"></span>
+            <img src="./img/icon_arrow_up.png" id="arrow" alt="">
+            <div id="list">
+                <ul>
+                    <li onclick="personal_info()">
+                        <img src="img/icon_user.png">
+                        <span>个人中心</span>
+
+                    </li>
+                    <li onclick="setting_info()">
+                        <img src="img/icon_setting.png">
+                        <span>账户设置</span>
+
+                    </li>
+                    <li onclick="loginOut()">
+                        <img src="img/icon_exit.png">
+                        <span>退出登录</span>
+
+                    </li>
+                </ul>
+                <div class="triangle"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="con_bg">
+        <div class="title">
+            账户设置
+        </div>
+        <div class="form_bg">
+            <form action="/account/profile" enctype="multipart/form-data" method="POST" class="form">
+                <table>
+                    <tr class="upload_files">
+                        <td>
+                            <label for="files">头像:</label>
+                        </td>
+                        <td>
+                            <input type="file" id="files">
+                            <label for="files" id="file_lab">
+                                <div id="lab_img"></div>
+                                <div id="black_screen">
+                                    <span>上传文件</span>
+                                    <div class="file_bg"></div>
+
+                                </div>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="afterline">
+                        <td>
+                            <label for="name" >昵称:</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="" name="name" id="name">
+                        </td>
+                    </tr>
+                    <tr class="sexline">
+                        <td>
+                            <label for="sex" id="sex">性别:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sex" id="man" value="man"><label for="man">&nbsp;男</label>
+                            <input type="radio" name="sex" id="woman" value="woman"><label for="woman">&nbsp;女</label>
+                        </td>
+                    </tr>
+                    <tr class="afterline">
+                        <td>
+                            <label for="star">星座:</label>
+                        </td>
+                        <td>
+                            <select name="star" id="stars" maxsize=5>
+                                <option value="0">请选择</option>
+                                <option value="1">白羊座</option>
+                                <option value="2">金牛座</option>
+                                <option value="3">双子座</option>
+                                <option value="4">巨蟹座</option>
+                                <option value="5">狮子座</option>
+                                <option value="6">处女座</option>
+                                <option value="7">天秤座</option>
+                                <option value="8">天蝎座</option>
+                                <option value="9">射手座</option>
+                                <option value="10">摩羯座</option>
+                                <option value="11">水瓶座</option>
+                                <option value="12">双鱼座</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="afterline">
+                        <td>
+                            <label for="province">城市:</label>
+                        </td>
+                        <td>
+                            <select name="province" id="province">
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="afterline">
+                        <td>
+                            <label for="pwd">密码:</label>
+                        </td>
+                        <td>
+                            <a href="http://localhost:8080/project/program/alter_pwd.html">修改密码</a>
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" value="提交" id="btn_sub">
+
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <span>Copyright &copy; 2017 apis.sh All Rights Reserved | 陕ICP备15013925号-3</span>
+    </footer>
+    <script src="./js/user_config.js"></script>
+
+</body>
+
+</html>

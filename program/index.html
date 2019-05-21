@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://localhost:8080/project/program/css/index.css"/>
+    <script type="text/javascript" src="http://localhost:8080/project/program/js/common.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/project/program/js/index.js"></script>    
+    <title>登录注册界面</title>
+</head>
+<body>
+    <div class="head_bg">
+        <a href="#" class="head_logo" onclick="goback()">
+            <img src="data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDc3Ljg4IDI1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxvZ29fd2hpdGU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEuNjksMjUuNzYsMTcuMjUsMUgyNi41VjI1Ljc2SDIwLjU5bC0uMDctOC41NEgxMy45TDguNzYsMjUuNzZaTTIwLjUxLDUuODNsLTQuNDQsNi45MWg0LjQ0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEuNjkgLTEpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzQuNDQsMTcuMTF2OC42NUgyOS4xN1YxSDQxLjUzYTE3LDE3LDAsMCwxLDQuODMuNDgsNi44Myw2LjgzLDAsMCwxLDMuODYsMy4zOCw4LjcxLDguNzEsMCwwLDEsMSw0LjE5LDkuNDIsOS40MiwwLDAsMS0uNjksMy41OCw3LjI0LDcuMjQsMCwwLDEtMS45MSwyLjc3LDYuMzgsNi4zOCwwLDAsMS0yLjM2LDEuMzQsMTIuMzMsMTIuMzMsMCwwLDEtMy40LjM3Wm0wLTQuNDJoNy4xNmE0LjYxLDQuNjEsMCwwLDAsMi43MS0uNTksMy45NCwzLjk0LDAsMCwwLDEuMTUtMy4yM3EwLTIuNDktMS43NC0zLjE5YTUuNjcsNS42NywwLDAsMC0yLS4yNkgzNC40NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjY5IC0xKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjg5LDI1Ljc2VjFoNS4yN1YyNS43NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjY5IC0xKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYyLjA2LDI2VjIxLjU4aDlhNS4yOSw1LjI5LDAsMCwwLDIuODYtLjUyLDIuNzUsMi43NSwwLDAsMCwxLTIuMzQsMywzLDAsMCwwLTEuMjEtMi42NCwzLjgyLDMuODIsMCwwLDAtMi4xOC0uNDhINjcuODlxLTMuMzMsMC00LjgtMS41MmE2Ljc1LDYuNzUsMCwwLDEtMS40My0yLjQyLDkuMjYsOS4yNiwwLDAsMS0uNTItMy4xMiw5LjU3LDkuNTcsMCwwLDEsMS4yMS00Ljc2LDQuODYsNC44NiwwLDAsMSwzLjc3LTIuNDUsMjIuNjgsMjIuNjgsMCwwLDEsMi42Mi0uMTFoOS43NVY1LjYzaC04LjhhMTIuNTIsMTIuNTIsMCwwLDAtMi42Mi4yMnEtMS4zMi40MS0xLjMyLDIuNTNhMi40NCwyLjQ0LDAsMCwwLDEuMTIsMi4zOCw1LDUsMCwwLDAsMi40Ny40NWgzLjE1YTkuMzcsOS4zNywwLDAsMSwzLjU5LjUyQTUuMDksNS4wOSwwLDAsMSw3OSwxNC44NWExMS42MiwxMS42MiwwLDAsMSwuNjIsMy44Myw5LjU2LDkuNTYsMCwwLDEtLjgyLDQuMDUsNC45NCw0Ljk0LDAsMCwxLTMuNDQsMywxOC44MiwxOC44MiwwLDAsMS0zLjM5LjIyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEuNjkgLTEpIi8+PC9zdmc+
+            " alt="">
+            <span>悦读项目</span>
+        </a>
+            
+    </div>
+    <div class="frame">   
+        <div class="content_one">
+            <div class="lab1" onclick="openlogin()" > <label>登录</label></div>
+            <div class="lab2" onclick="openregist()"> <label>注册</label></div>
+        </div>
+        <div class="login">
+            <div class="phoneNum">
+                <input type="text"  id="loginphone" placeholder="请输入手机号码" onblur="checkphone(0)" />
+                <span id="logintip1"></span>
+            </div>
+            <div>
+                    <input type="password" class="content_two" id="loginpwd" placeholder="请输入密码" onblur="checkpwd(0)">
+                    <span id="logintip2"></span>
+            </div>
+            <input type="button" class="btn_register" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录" onclick="login()"/>
+            <a href="http://localhost:8080/project/program/pwd.html" id="go_pwd">忘记密码?</a>
+        </div>
+        <div class="regist">
+            <div class="phoneNum">
+                    <input type="text"  id="phone" placeholder="请输入手机号码" onblur="checkphone(1)"  />
+                    <span id="tip1"></span>
+            </div>
+            <div style="font-size: 0;">
+                    <input type="text" class="prove" id="prove" placeholder="请输入验证码" onblur="checkprove()"/>
+                    <input type="button" class="btn" value="获取验证码" onclick="getcaptcha()"/>
+                    <span id="tip2"></span>
+            </div>
+            <div>
+                    <input type="password" class="content_two" placeholder="请输入6~32位密码" onblur="checkpwd(1)"/>
+                    <span id="tip3"></span>
+            </div>
+            <div>
+                    <input type="password" class="content_two" placeholder="重复密码" onblur="checkagainpwd()"/>
+                    <span id="tip4"></span>
+            </div>
+            
+            <input type="button" class="btn_register" value="注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册" onclick="regist()"/>
+            <div class="lab3" onclick="openlogin()"><label>已有账号，马上登陆</label></div>
+        </div>
+    </div>
+    <div class="bottom"><label>Copyrightt&nbsp;&copy;2017&nbsp;apis.sh All Rights Reserved | 陕西ICP备15013925号-3</label></div>
+</body>
+</html>

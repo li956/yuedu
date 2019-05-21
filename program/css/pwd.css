@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 1000px;
+    background: url("../img/bg_signin.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.head_bg {
+    width: 100%;
+    background: rgba(127, 74, 136, 0.3);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+    height: 60px;
+    padding-left: 39px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.head_bg .head_logo img {
+    height: 26px;
+    width: 78px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-right: 2px solid #ffffff;
+    padding-right: 18px;
+}
+
+.head_bg .head_logo span {
+    margin-left: 111px;
+    bottom: 0;
+    line-height: 60px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.con_bg .form_bg {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    width: 567px;
+    margin: 0 auto;
+    margin-bottom:230px;
+    padding: 50px 80px 36px 77px;
+    box-sizing: border-box;
+    margin-top: 165px;
+}
+
+.con_bg .form_bg .form_title {
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+
+    text-align: center;
+    margin-bottom: 33px;
+
+}
+
+input:focus {
+    border: 1px solid rgba(127, 74, 136, 1) !important;
+    outline: none;
+}
+
+.input {
+    height: 59px;
+    width: 410px;
+}
+
+.input input {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    height: 42px;
+    width: 410px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(34, 38, 41, 0.8);
+    letter-spacing: 0;
+    text-indent: 12px;
+    background: transparent;
+}
+
+.input span {
+    color: red;
+    font-size: 13px;
+    display: block;
+    text-indent: 10px;
+}
+
+.captcha {
+    height: 59px;
+    width: 410px;
+    font-size: 0;
+
+}
+
+
+.captcha #captcha {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    height: 42px;
+    width: 289px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(34, 38, 41, 0.8);
+    letter-spacing: 0;
+    text-indent: 12px;
+    background: transparent;
+}
+
+.captcha #btn_captcha {
+    background: #7F4A88;
+    border-radius: 3px;
+    border: none;
+    width: 103px;
+    height: 42px;
+    margin-left: 18px;
+    font-family: ArialMT;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#btn_captcha:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.captcha span {
+    color: red;
+    font-size: 13px;
+    display: block;
+    text-indent: 10px;
+}
+
+#firm {
+    background: rgba(127, 74, 136, 1);
+    border-radius: 5px;
+    border: none;
+    width: 410px;
+    height: 42px;
+    margin-top: 14px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+#firm:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.footer {
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    height: 60px;
+    width: 100%;
+}
+
+.footer span {
+    line-height: 60px;
+}
+#go_login{
+    font-size: 13px;
+    display: block;
+    margin-top: 8px;
+    color: #ffff;
+    opacity: 0.5;
+    text-align: center;
+}

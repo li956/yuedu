@@ -1,0 +1,17 @@
+{
+    "code": "SUCCESS",
+    "data": {
+        "comments": [{
+            "_id": "5c85e846b726694e0fe6ca2e",
+            "body": "棒棒棒",
+            "author": {
+                "_id": "5c7e30f0b726694e0fe6ca27",
+                "name": "www",
+                "avatar": "avatar/66eaad3c9cd6438ba64355a51511f37f"
+            },
+            "praise_sum": 86,
+            "create_time": 1558348662872
+        }]
+    },
+    "count": 1
+}
